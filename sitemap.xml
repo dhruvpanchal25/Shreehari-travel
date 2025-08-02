@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.shreeharitravel.in/</loc>
+    <loc>https://dhruvpanchal25.github.io/Shreehari-travel/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://dhruvpanchal25.github.io/Shreehari-travel/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Add more URLs here if you have other pages -->
 </urlset>
