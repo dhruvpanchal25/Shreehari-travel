@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShreeHari Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("CA0GbM3c8-LqU_F1_"); // Replace with your EmailJS public key
+      })();
+  </script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <header class="navbar">
+        <div class="nav-center">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Testimonial</a>
+        </div>
+        <img src="asset/Shreehari logo.png" alt="Logo" class="logo">
+      </header>
+      <div class="hero-text">
+        <h1 class="hero-heading">ShreeHari Travel</h1>
+        <p class="hero-sub">Elegance in every mile</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About + Form Section -->
+  <section class="about-form">
+    <div class="about-description animate-on-scroll">
+        <h2>Welcome to Shree Hari Travel</h2>
+        <h4>Where Every Journey Begins with Trust.</h4>
+        <p>
+          At Shree Hari Travel, we don’t just take you from place to place — we deliver experiences.
+          With a commitment to comfort, reliability, and personalized service, we provide travel solutions
+          across India that feel as smooth as they are memorable. Whether it’s a solo escape, a family vacation,
+          or a group tour, our well-maintained fleet and professional support ensure your trip is nothing
+          short of exceptional.
+        </p>
+        <p class="highlight">Elegance in every mile,<br>comfort in every moment</p>
+    </div>
+
+    <div class="form-container animate-on-scroll">
+      <h2>Your Journey, Just a Few Details Away.</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Your Name" required />
+        <input type="text" name="pickup_location" placeholder="Pickup Location" required />
+        <input type="text" name="drop_location" placeholder="Drop Location" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <select name="vehicle_type" required>
+          <option disabled selected>Select Vehicle Type</option>
+          <option>Urbania</option>
+          <option>Tempo Traveller</option>
+          <option>Tavera</option>
+          <option>Innova</option>
+          <option>Innova Crysta</option>
+          <option>Ertiga</option>
+        </select>
+        <input type="date" name="pickup_date" required />
+        <input type="time" name="pickup_time" required />
+        <button type="submit">Let’s Ride</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Gujarat's Must-Visit Gems Section -->
+  <section class="must-visit-wrapper animate-on-scroll">
+    <h2 class="section-title">Gujarat’s Must‑Visit Gems</h2>
+    <div class="main-row">
+      
+      <!-- MIDDLE COLUMN: Statue of Unity -->
+      <div class="column">
+        <div class="tall-image">
+          <img src="asset/Statue of unity.jpg" alt="Statue of Unity">
+          <div class="label">Statue of Unity</div>
+        </div>
+      </div>
+
+      <!-- LEFT COLUMN: Somnath + Kutch -->
+      <div class="column">
+        <div class="small-image">
+          <img src="asset/somnath-temple.jpg" alt="Somnath Temple">
+          <div class="label">Somnath Temple</div>
+        </div>
+        <div class="small-image">
+          <img src="asset/kutch.png" alt="Rann of Kutch">
+          <div class="label">Rann of Kutch</div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Dwarka -->
+      <div class="column">
+        <div class="tall-image">
+          <img src="asset/dwarka.jpg" alt="Dwarka">
+          <div class="label">Dwarka</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why shreehari travel -->
+  <section class="container">
+    <h1>Why Shreehari travel?</h1>
+    <div class="content">
+      <div class="left">
+        <div class="box">
+          <h2>Trusted since 2008</h2>
+          <p>With over 15 years of experience, we’ve built a reputation for safety, punctuality, and professionalism.</p>
+        </div>
+        <div class="box">
+          <h2>Well-Maintained Fleet</h2>
+          <p>From hatchbacks to highway kings — our vehicles are clean, comfortable, and road-trip ready.</p>
+        </div>
+        <div class="box">
+          <h2>Professional Drivers</h2>
+          <p>With over 15 years of experience, we’ve built a reputation for safety, punctuality, and professionalism.</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <img src="asset/12.jpg" alt="Travel Car">
+      </div>
+
+      <div class="right">
+        <div class="box">
+          <h2>Customized Travel Plans</h2>
+          <p>Whether it’s a solo trip, family vacation, or group tour — we tailor your ride to fit your needs.</p>
+        </div>
+        <div class="box">
+          <h2>24/7 Customer Support</h2>
+          <p>Travel with confidence — we’re just a call away anytime, anywhere.</p>
+        </div>
+        <div class="box">
+          <h2>Clean & Sanitized Rides</h2>
+          <p>Your health is our priority — we follow strict cleanliness protocols for all vehicles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service we provide class -->
+  <section class="services-section animate-on-scroll">
+    <h1 class="section-title">Service we Provide</h1>
+    <div class="services-grid">
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/map-marker.png" alt="icon" />
+        <p>Day tours and local sightseeing</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/briefcase.png" alt="icon" />
+        <p>Business and corporate travel arrangements</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/globe-earth.png" alt="icon" />
+        <p>Journey throughout Gujarat India</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/marker.png" alt="icon" />
+        <p>Pickups/drop-offs from railway stations and airports</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/car--v1.png" alt="icon" />
+        <p>Wedding and event transport All Over India Services</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <img src="https://img.icons8.com/ios-filled/64/bus.png" alt="icon" />
+        <p>Ahmedabad outstation trip All type of Vehical hiring</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="footer-section">
+    <div class="footer-container">
+      
+      <!-- Left: Logo + Socials -->
+      <div class="footer-left">
+        <img src="asset/Shreehari logo.png" alt="Shree Hari Logo" class="footer-logo" />
+        <p class="connect-text">Let's Stay Connected</p>
+        <div class="social-icons">
+          <a href="#">
+            <img src="asset/Instagram.png" alt="Instagram" class="social-icon" />
+          </a>
+          <a href="#">
+            <img src="asset/WhatsApp.png" alt="WhatsApp" class="social-icon" />
+          </a>
+          <a href="#">
+            <img src="asset/Facebook.png" alt="Facebook" class="social-icon" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle: Vehicle List -->
+      <div class="footer-middle">
+        <h3>Meet Your Roadmate</h3>
+        <ul>
+          <li>All type of bus</li>
+          <li>Force Urbania</li>
+          <li>Tempo Traveller</li>
+          <li>Tavera</li>
+          <li>Innova</li>
+          <li>Innova Crysta</li>
+          <li>Ertiga</li> 
+          <li>swift dzire</li>
+        </ul>
+      </div>
+
+      <!-- Right: Contact -->
+      <div class="footer-right">
+        <h3>Reach Out to Us</h3>
+        <p><img src="asset/Phone.png" alt="phone" class="icon" /> +91 9913815530</p>
+        <p><img src="asset/Email.png" alt="email" class="icon" /> info@shreeharitravel.in</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="js/script.js"></script>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
