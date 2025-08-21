@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+.must-visit-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #831818;
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discription{
+  color: #831818;
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+}
+
+.main-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tall-image,
+.small-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px; 
+}
+
+.tall-image {
+  height: 100%;
+  flex: 1;
+}
+
+.tall-image img,
+.small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: 0.4s ease;
+}
+
+.label {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  color: #fff;
+  font-family: 'Inria Serif', serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 4px black;
+}
+
+.tall-image:hover img,
+.small-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .tall { grid-row: span 1; }
+  .wide { grid-column: span 2; }
+}

@@ -17,7 +17,7 @@ body {
 
     
 .hero {
-  background: url('../asset/back1.png') no-repeat center center/cover;
+  background: url('../asset/image/back1.png') no-repeat center center/cover;
   height: 100vh;
   position: relative;
 }
@@ -214,6 +214,10 @@ body {
   margin-bottom: 40px;
 }
 
+.full-page{
+  text-align: right;
+}
+
 .main-row {
   display: flex;
   gap: 20px;
@@ -233,7 +237,7 @@ body {
 .small-image {
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 16px; 
 }
 
 .tall-image {
@@ -266,8 +270,98 @@ body {
   transform: scale(1.05);
 }
 
+.car-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e6e6e6;
+}
+
+.car-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.car-section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.arrow {
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+    
+.arrow:hover {
+  background: #000;
+  color: #fff;
+}
 
 
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  gap: 20px;
+}
+
+.car-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.car-card img {
+  width: 100%;
+  display: block;
+}
+
+.car-title {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: rgba(255,255,255,0.7);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.bottom-text {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .container {
   max-width: 1100px;
@@ -443,13 +537,13 @@ body {
 }
 
 .connect-text {
-  font-size: 14px;
+  font-size: 17px;
   margin-top: 10px;
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
   margin-top: 10px;
   transition: transform 0.3s ease;
@@ -581,6 +675,26 @@ body {
     transform: none;
     justify-content: center;
     margin-top: 10px;
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width: 900px) {
+  .car-card {
+    flex: 0 0 80%;
+  }
+  .slider {
+    width: 90%;
   }
 }
 
