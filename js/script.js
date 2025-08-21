@@ -1,4 +1,3 @@
-// Scroll Animation
 document.addEventListener("DOMContentLoaded", function () {
   const scrollElements = document.querySelectorAll(".animate-on-scroll");
 
@@ -13,9 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollElements.forEach((el) => scrollObserver.observe(el));
 });
 
+const slider = document.getElementById("slider");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let scrollAmount = 0;
+const scrollStep = slider.clientWidth * 0.9;
+
+next.addEventListener("click", () => {
+  slider.scrollBy({ left: scrollStep, behavior: "smooth" });
+});
+prev.addEventListener("click", () => {
+  slider.scrollBy({ left: -scrollStep, behavior: "smooth" });
+});
 
 
-// Zoom-out on scroll for hero text
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const heading = document.querySelector('.hero-heading');
@@ -29,6 +40,8 @@ window.addEventListener('scroll', () => {
     sub.classList.remove('zoom-out');
   }
 });
+
+
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
   event.preventDefault();
