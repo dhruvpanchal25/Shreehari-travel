@@ -11,4 +11,11 @@
     <priority>0.9</priority>
   </url>
   <!-- Add more URLs here if you have other pages -->
+
+  <url>
+    <loc>https://dhruvpanchal25.github.io/Shreehari-travel/mustvisit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
