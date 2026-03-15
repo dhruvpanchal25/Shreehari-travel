@@ -16,16 +16,21 @@
 </head>
 <body>
 
-  
   <section class="hero">
     <div class="overlay">
       <header class="navbar">
-        <div class="nav-center">
-          <a href="index.html">Home</a>
-          <a href="#">About</a>
-          <a href="#">Testimonial</a>
-        </div>
+        <!-- LOGO -->
         <img src="asset/image/Shreehari logo.png" alt="Logo" class="logo">
+        <!-- DESKTOP MENU -->
+        <nav class="nav-center" id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Testimonial</a>
+        </nav>
+        <!-- MOBILE HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
       </header>
       <div class="hero-text">
         <h1 class="hero-heading">ShreeHari Travel</h1>
@@ -33,6 +38,7 @@
       </div>
     </div>
   </section>
+
 
   
   <section class="about-form">
@@ -102,7 +108,7 @@
         </div>
       </div>
 
-      
+
       <div class="column">
         <div class="tall-image">
           <img src="asset/image/dwarka.jpg" alt="Dwarka">
@@ -122,7 +128,7 @@
       <div class="slider" id="slider">
 
         <div class="car-card">
-          <span class="car-title">Tempo Traveller</span>
+          <span class="car-title">Traveller Van</span>
           <img src="asset/image/tempo.png" alt="Tempo Traveller">
         </div>
 
@@ -153,7 +159,7 @@
     <p class="bottom-text">Your journey, your way — with wheels you can trust.</p>
   </section>
 
-  
+    
   <section class="container">
     <h1>Why Shreehari travel?</h1>
     <div class="content">
@@ -282,21 +288,20 @@
 
   <script src="js/script.js"></script>
   <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
     });
-  });
 
-  document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
     observer.observe(el);
-  });
-</script>
+    });
+  </script>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
