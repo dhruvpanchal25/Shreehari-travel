@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShreeHari Travel</title>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">
+    <img src="asset/image/Shreehari logo.png" alt="ShreeHari Logo">
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="menu-toggle">&#9776;</div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- OVERLAY -->
+<div class="menu-overlay"></div>
+
+<!-- HERO -->
+<section class="hero">
+
+  <img src="asset/image/homebg.png" class="hero-desktop">
+  <img src="asset/image/mobilebg.png" class="hero-mobile">
+
+  <div class="hero-content">
+    <div class="badge">Elite Travel Partner</div>
+
+    <h1>Explore Gujarat <br><span>Like Never Before</span></h1>
+
+    <p>Luxury travel experiences designed to immerse you in heritage.</p>
+
+    <div class="buttons">
+      <button class="btn">Plan Your Trip</button>
+      <button class="btne">View Packages</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-container">
+
+    <div class="about-img">
+      <img src="asset/image/about.png">
+    </div>
+
+    <div class="about-content">
+      <small style="color:#c9a84f;">OUR HERITAGE</small>
+
+      <h2>
+        Luxury Travel,<br>
+        Rooted in <br><span>Gujarati</span><br>Excellence
+      </h2>
+
+      <p>ShreeHari Travel was born from a passion for showcasing the vibrant soul of Gujarat.</p>
+
+      <div class="about-stats">
+        <div>
+          <h3 class="counter" data-target="15">0</h3>
+          <span>YEARS</span>
+        </div>
+        <div>
+          <h3 class="counter" data-target="5000">0</h3>
+          <span>CLIENTS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="vehicles premium">
+
+  <div class="vehicle-header">
+    <small>OUR ELITE FLEET</small>
+    <h2>Travel in <span>Supreme Comfort</span></h2>
+    <p>Luxury vehicles crafted for unforgettable journeys.</p>
+  </div>
+
+  <div class="vehicle-container">
+
+    <!-- CARD -->
+    <div class="vehicle-card">
+      <span class="tag">Premium</span>
+
+      <div class="img-box">
+        <img src="asset/image/tempo.png">
+      </div>
+
+      <div class="vehicle-info">
+        <div class="top">
+          <h3>Tempo Traveller</h3>
+          <span class="price">₹26/km</span>
+        </div>
+
+        <ul>
+          <li>👨‍👩‍👧‍👦 16+1 Passengers</li>
+          <li>🪟 Wide Windows</li>
+          <li>📺 Entertainment</li>
+          <li>🎒 Group Travel</li>
+          <li>🧑‍✈️ Professional Driver</li>
+        </ul>
+
+        <a href="https://wa.me/+91 9913815530" target="_blank" class="btn">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="vehicle-card">
+      <span class="tag">Premium</span>
+
+      <div class="img-box">
+        <img src="asset/image/jt.png">
+      </div>
+
+      <div class="vehicle-info">
+        <div class="top">
+          <h3>Suzuki Eartiga</h3>
+          <span class="price">₹13/km</span>
+        </div>
+
+        <ul>
+          <li>👨‍👩‍👧‍👦 6+1 Passengers</li>
+          <li>❄️ Dual AC</li>
+          <li>🎵 Bluetooth Audio</li>
+          <li>🧑‍✈️ Professional Driver</li>
+        </ul>
+
+        <a href="https://wa.me/+91 9913815530" target="_blank" class="btn">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="vehicle-card">
+      <span class="tag">Premium</span>
+
+      <div class="img-box">
+        <img src="asset/image/taxi.png">
+      </div>
+
+      <div class="vehicle-info">
+        <div class="top">
+          <h3>Tavera</h3>
+          <span class="price">₹15/km</span>
+        </div>
+
+        <ul>
+          <li>👨‍👩‍👧‍👦 7+1 Passengers</li>
+          <li>❄️ Climate Control</li>
+          <li>🎵 Bluetooth Audio</li>
+          <li>🧑‍✈️ Professional Driver</li>
+        </ul>
+
+        <a href="https://wa.me/+91 9913815530" target="_blank" class="btn">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="vehicle-card">
+      <span class="tag">Premium</span>
+
+      <div class="img-box">
+        <img src="asset/image/crysta.png">
+      </div>
+
+      <div class="vehicle-info">
+        <div class="top">
+          <h3>Innova Crysta</h3>
+          <span class="price">₹17/km</span>
+        </div>
+
+        <ul>
+          <li>👨‍👩‍👧‍👦 6+1 Passengers</li>
+          <li>🪑 Luxury Seats</li>
+          <li>❄️ Dual AC</li>
+          <li>🧑‍✈️ Professional Driver</li>
+        </ul>
+
+        <a href="https://wa.me/+91 9913815530" target="_blank" class="btn">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="vehicle-card">
+      <span class="tag">Premium</span>
+
+      <div class="img-box">
+        <img src="asset/image/dzire.jpg">
+      </div>
+
+      <div class="vehicle-info">
+        <div class="top">
+          <h3>Suzuki Dzire</h3>
+          <span class="price">₹12/km</span>
+        </div>
+
+        <ul>
+          <li>👨‍👩‍👧‍👦 4+1 Passengers</li>
+          <li>🎵 Bluetooth Audio</li>
+          <li>❄️ Climate Control</li>
+          <li>🧑‍✈️ Professional Driver</li>
+        </ul>
+
+        <a href="https://wa.me/+91 9913815530" target="_blank" class="btn">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="luxury-section">
+
+  <div class="lux-overlay"></div>
+
+  <!-- ⭐ HEADING -->
+  <div class="lux-header">
+    <small>OUR SERVICES</small>
+    <h2>Premium <span>Travel Solutions</span></h2>
+    <p>Designed for comfort, luxury and seamless experience.</p>
+  </div>
+
+  <div class="lux-container">
+
+    <div class="lux-card">
+      <div class="icon"><i data-lucide="gift"></i></div>
+      <h3>Wedding Fleet</h3>
+      <p>Elevate your special day with our luxury fleet.</p>
+    </div>
+
+    <div class="lux-card">
+      <div class="icon"><span data-lucide="map-pin"></span></div>
+      <h3>Bespoke Routes</h3>
+      <p>Customized travel plans tailored to your journey.</p>
+    </div>
+
+    <div class="lux-card">
+      <div class="icon"><i data-lucide="phone"></i></div>
+      <h3>Priority Support</h3>
+      <p>Dedicated concierge team for comfort.</p>
+    </div>
+
+    <div class="lux-card">
+      <div class="icon"><i data-lucide="briefcase"></i></div>
+      <h3>Corporate Travel</h3>
+      <p>Professional transport for executives.</p>
+    </div>
+
+    <div class="lux-card">
+      <div class="icon"><i data-lucide="plane"></i></div>
+      <h3>Airport Transfers</h3>
+      <p>On-time pickup and drop services.</p>
+    </div>
+
+    <div class="lux-card">
+      <div class="icon"><i data-lucide="luggage"></i></div>
+      <h3>Custom Packages</h3>
+      <p>Tailored travel experiences for you.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <p class="contact-subtitle">CONTACT US</p>
+
+      <h2>
+        Start Your <br>
+        Journey <br>
+        Today
+      </h2>
+
+      <p class="contact-desc">
+        Looking for a bespoke itinerary or a quick quote?
+        Reach out to our travel specialists.
+      </p>
+
+      <!-- INFO -->
+      <div class="contact-info">
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <div>
+            <h4>Our HQ</h4>
+            <p>Shreehari travel , Maninagar, Ahmedabad</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i data-lucide="phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 99138 15530 / +91 80003 24181</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i data-lucide="mail"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>info@shreeharitravel.in</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="contact-form-box">
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="text" name="phone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        
+        <div class="form-row">
+          <input type="text" name="destination" placeholder="e.g. Somnath, Kutch" required>
+          <div class="input-group date-group">
+            <input type="date" name="date" required>
+          </div>
+        </div>
+        
+        <textarea name="message" placeholder="How can we make your trip exceptional?" required></textarea>
+        <button type="submit">
+          Request Luxury Quote →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col brand">
+      <div class="footer-logo">
+        <img src="asset/image/Shreehari logo.png" alt="ShreeHari Logo">
+      </div>
+      <p>
+        Pioneering luxury travel in Gujarat. We bridge the gap between traditional hospitality and modern convenience.
+      </p>
+
+<div class="socials">
+
+  <a href="https://www.instagram.com/shreeharitravel_19?igsh=MTQ0YXJ3bHZnOTc5Mg==">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         width="20" height="20" 
+         fill="none" stroke="currentColor" 
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <circle cx="12" cy="12" r="3"/>
+      <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>
+  </a>
+
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="20" height="20"
+         fill="none" stroke="currentColor"
+         stroke-width="2">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+  </a>
+
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="20" height="20"
+         fill="none" stroke="currentColor"
+         stroke-width="2">
+      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53
+               4.48 4.48 0 0 0-7.86 3v1
+               A10.66 10.66 0 0 1 3 4s-4 9 5 13
+               a11.64 11.64 0 0 1-7 2
+               c9 5 20 0 20-11.5
+               a4.5 4.5 0 0 0-.08-.83
+               A7.72 7.72 0 0 0 23 3z"/>
+    </svg>
+  </a>
+
+</div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-col">
+      <h4>COMPANY</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Fleet</a></li>
+        <li><a href="#">Luxury Services</a></li>
+        <li><a href="#">Booking Policy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h4>TOP DESTINATIONS</h4>
+      <ul>
+        <li><a href="#">Ahmedabad Heritage</a></li>
+        <li><a href="#">Rann of Kutch</a></li>
+        <li><a href="#">Somnath Temple</a></li>
+        <li><a href="#">Gir Forest Safari</a></li>
+        <li><a href="#">Statue of Unity</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2024 ShreeHari Travel & Logistics. All Rights Reserved.</p>
+
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+});
+
+  
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
